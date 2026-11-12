@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeafCare AI | Smart Plant Health</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="/" class="logo">
+        <span class="logo-icon">✿</span>
+        LeafCare<span>AI</span>
+    </a>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#technology">Technology</a>
+        <a href="#detect">Disease Detection</a>
+    </div>
+
+    <a href="#detect" class="nav-button">Get Started ↗</a>
+</nav>
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <div class="eyebrow">
+            <span class="live-dot"></span>
+            INTELLIGENT PLANT HEALTH SYSTEM
+        </div>
+
+        <h1>
+            Every leaf has a story.<br>
+            <span>Let AI read it.</span>
+        </h1>
+
+        <p>
+            Detect plant diseases early with artificial intelligence.
+            Upload a leaf image and discover insights to help protect
+            your plants.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#detect" class="primary-button">
+                Analyze a Leaf <span>↗</span>
+            </a>
+            <a href="#technology" class="secondary-button">
+                Explore Technology
+            </a>
+        </div>
+
+        <div class="hero-note">
+            <span>✦</span> AI-powered plant health assistance
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="image-glow"></div>
+
+        <img
+          src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=1000"
+          alt="Healthy green plant"
+          class="hero-image">
+
+        <div class="floating-card">
+            <span class="card-icon">🌱</span>
+            <div>
+                <strong>Plant Health</strong>
+                <small>Care starts with detection</small>
+            </div>
+            <span class="status-dot"></span>
+        </div>
+
+        <div class="image-label">GROW HEALTHIER. LIVE GREENER.</div>
+    </div>
+
+</section>
+
+<section class="stats">
+    <div>
+        <strong>AI</strong>
+        <span>Powered Detection</span>
+    </div>
+    <div>
+        <strong>01</strong>
+        <span>Simple Image Upload</span>
+    </div>
+    <div>
+        <strong>24/7</strong>
+        <span>Digital Plant Assistance</span>
+    </div>
+</section>
+
+<section class="detection-section" id="detect">
+
+    <div class="section-heading">
+        <div class="eyebrow">SMART DISEASE DETECTION</div>
+        <h2>Let's check your <span>leaf.</span></h2>
+        <p>Upload a clear image of a plant leaf to get started.</p>
+    </div>
+
+    <div class="upload-card">
+
+        <div class="upload-icon">🌿</div>
+
+        <h3>Upload your leaf image</h3>
+
+        <p>Drag and drop your image here, or browse your device.</p>
+
+        <label for="leafInput" class="upload-button">
+            Choose Image
+        </label>
+
+        <input type="file" id="leafInput" accept="image/*" hidden>
+
+        <div class="preview-area" id="previewArea">
+            <img id="previewImage" alt="Selected leaf preview">
+        </div>
+
+        <p class="file-info">JPG, JPEG or PNG · Maximum 10 MB</p>
+
+        <button id="analyzeButton" class="primary-button analyze-button" disabled>
+            Analyze Leaf ↗
+        </button>
+
+        <p id="uploadMessage" class="upload-message">
+            AI prediction integration is our next development step.
+        </p>
+
+    </div>
+</section>
+
+<section class="technology" id="technology">
+
+    <div class="section-heading">
+        <div class="eyebrow">OUR TECHNOLOGY</div>
+        <h2>Nature meets <span>intelligence.</span></h2>
+        <p>Designed to make plant health monitoring simpler.</p>
+    </div>
+
+    <div class="feature-grid">
+
+        <article class="feature-card">
+            <div class="feature-icon">📷</div>
+            <h3>Image Analysis</h3>
+            <p>Upload plant leaf images for AI-based visual analysis.</p>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3>Deep Learning</h3>
+            <p>Use a trained image classification model to identify diseases.</p>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-icon">🌱</div>
+            <h3>Plant Care Insights</h3>
+            <p>Explore disease information and helpful plant care guidance.</p>
+        </article>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <a href="/" class="logo">✿ LeafCare<span>AI</span></a>
+    <p>Smart technology for a greener tomorrow.</p>
+    <small>© 2026 LeafCare AI · Final Year Project</small>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
